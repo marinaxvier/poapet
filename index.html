@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POAPet</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">PoaPet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produtos">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agendamento">Agendamento</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="inicio" class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4">POAPet</h1>
+      <p class="lead">A PetShop favorita dos Gaúchos.</p>
+    </div>
+  </div>
+
+  <div id="cadastroCliente" class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center">Cadastro do Cliente</h2>
+        <form>
+          <div class="form-group">
+            <label for="nomeCliente">Nome</label>
+            <input type="text" class="form-control" id="nomeCliente" placeholder="Digite o nome do cliente">
+          </div>
+          <div class="form-group">
+            <label for="enderecoCliente">Endereço</label>
+            <input type="text" class="form-control" id="enderecoCliente" placeholder="Digite o endereço do cliente">
+          </div>
+          <div class="form-group">
+            <label for="telefoneCliente">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneCliente" placeholder="Digite o telefone do cliente">
+          </div>
+          <div class="form-group">
+            <label for="emailCliente">E-mail</label>
+            <input type="email" class="form-control" id="emailCliente" placeholder="Digite o e-mail do cliente">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="cadastroPet" class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Cadastro do Pet</h2>
+        <form id="petForm">
+          <div class="form-group">
+            <label for="nomePet">Nome</label>
+            <input type="text" class="form-control" id="nomePet" placeholder="Digite o nome do pet">
+          </div>
+          <div class="form-group">
+            <label>Tipo</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tipoPet" id="cao" value="cao">
+              <label class="form-check-label" for="cao">Cão</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tipoPet" id="gato" value="gato">
+              <label class="form-check-label" for="gato">Gato</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="racaPet">Raça</label>
+            <input type="text" class="form-control" id="racaPet" placeholder="Digite a raça do pet">
+          </div>
+          <div class="form-group">
+            <label for="temperamentoPet">Temperamento</label>
+            <input type="text" class="form-control" id="temperamentoPet" placeholder="Digite o temperamento do pet">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="agendamento" class="container">
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h2>Agendamento de Serviços</h2>
+        <form id="servicoForm">
+          <div class="form-group">
+            <label for="tipoServico">Tipo de Serviço</label>
+            <select class="form-control" id="tipoServico">
+              <option value="banho">Banho</option>
+              <option value="tosa">Tosa</option>
+              <option value="consulta">Consulta Veterinária</option>
+              <!-- adicione outras opções de serviço conforme necessário -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dataHora">Data e Hora</label>
+            <input type="datetime-local" class="form-control" id="dataHora">
+          </div>
+          <div class="form-group">
+            <label for="comentario">Comentário (opcional)</label>
+            <textarea class="form-control" id="comentario" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Agendar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="servicos" class="container">
+    <h2 class="text-center mb-4">Serviços</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="text-center">
+          <img src="atendimento_veterinario.jpg" alt="Atendimento Veterinário" class="img-fluid">
+          <h3>Atendimento Veterinário</h3>
+          <p>Oferecemos serviços veterinários especializados para garantir a saúde e o bem-estar do seu animal de estimação.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center">
+          <img src="banho_e_tosa.jpg" alt="Banho e Tosa" class="img-fluid">
+          <h3>Banho e Tosa</h3>
+          <p>Proporcionamos banho e tosa profissionais para manter seu pet limpo, saudável e com uma aparência impecável.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center">
+          <img src="hospedagem.jpg" alt="Serviço de Hospedagem" class="img-fluid">
+          <h3>Serviço de Hospedagem</h3>
+          <p>Oferecemos um ambiente seguro e confortável para hospedar o seu animal de estimação quando necessário, com cuidados especiais e atenção individualizada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="produtos" class="container">
+    <h2 class="text-center mb-4">Produtos</h2>
+    <div id="carouselProdutos" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="coleira.jpg" alt="Coleira" class="img-fluid mb-3">
+                <h3>Coleira</h3>
+                <p>Descrição da coleira...</p>
+                <button type="button" class="btn btn-primary">R$ 20,00</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="brinquedo.jpg" alt="Brinquedo" class="img-fluid mb-3">
+                <h3>Brinquedo</h3>
+                <p>Descrição do brinquedo...</p>
+                <button type="button" class="btn btn-primary">R$ 15,00</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="racao.jpg" alt="Ração" class="img-fluid mb-3">
+                <h3>Ração</h3>
+                <p>Descrição da ração...</p>
+                <button type="button" class="btn btn-primary">R$ 30,00</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="cama.jpg" alt="Cama" class="img-fluid mb-3">
+                <h3>Cama</h3>
+                <p>Descrição da cama...</p>
+                <button type="button" class="btn btn-primary">R$ 50,00</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="arranhador.jpg" alt="Arranhador" class="img-fluid mb-3">
+                <h3>Arranhador</h3>
+                <p>Descrição do arranhador...</p>
+                <button type="button" class="btn btn-primary">R$ 25,00</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="petiscos.jpg" alt="Petiscos" class="img-fluid mb-3">
+                <h3>Petiscos</h3>
+                <p>Descrição dos petiscos...</p>
+                <button type="button" class="btn btn-primary">R$ 10,00</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselProdutos" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">© 2024 POAPet | Desenvolvido por Marina Oliveira</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

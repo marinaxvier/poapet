@@ -1,0 +1,64 @@
+/* Estilos para o ID 'inicio' */
+#inicio {
+  background-color: #FFC300; /* Azul marinho para o fundo */
+  color: #fff; /* Texto branco */
+}
+
+/* Estilos para o ID 'cadastroCliente' */
+#cadastroCliente {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o ID 'cadastroPet' */
+#cadastroPet {
+  background-color: #fff; /* Amarelo para o fundo */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o ID 'agendamento' */
+#agendamento {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o ID 'servicos' */
+#servicos {
+  background-color: #fff; /* Amarelo para o fundo */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o ID 'produtos' */
+#produtos {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o rodapé */
+.footer {
+  background-color: #343a40; /* Azul marinho para o fundo */
+  color: #fff; /* Texto branco */
+  padding: 20px; /* Espaçamento interno */
+}
+
+img {
+  width: 140px; /* Define a largura como 100px */
+  height: 140px; /* Define a altura como 100px */
+  object-fit: cover;
+}
+
+#servicos img {
+  width: 200px; /* Define a largura como 200px */
+  height: 200px; /* Define a altura como 200px */
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #291859; /* Roxo escuro */
+  border-color: #291859; /* Roxo escuro */
+}
+
+.btn-primary:hover {
+  background-color: #180f26; /* Roxo mais escuro ao passar o mouse */
+  border-color: #180f26; /* Roxo mais escuro ao passar o mouse */
+}

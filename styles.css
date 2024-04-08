@@ -1,40 +1,33 @@
-/* Estilos para o ID 'inicio' */
 #inicio {
   background-color: #FFC300; /* Azul marinho para o fundo */
   color: #fff; /* Texto branco */
 }
 
-/* Estilos para o ID 'cadastroCliente' */
 #cadastroCliente {
   background-color: #fff; /* Fundo branco */
   padding: 20px; /* Espaçamento interno */
 }
 
-/* Estilos para o ID 'cadastroPet' */
 #cadastroPet {
   background-color: #fff; /* Amarelo para o fundo */
   padding: 20px; /* Espaçamento interno */
 }
 
-/* Estilos para o ID 'agendamento' */
 #agendamento {
   background-color: #fff; /* Fundo branco */
   padding: 20px; /* Espaçamento interno */
 }
 
-/* Estilos para o ID 'servicos' */
 #servicos {
   background-color: #fff; /* Amarelo para o fundo */
   padding: 20px; /* Espaçamento interno */
 }
 
-/* Estilos para o ID 'produtos' */
 #produtos {
   background-color: #fff; /* Fundo branco */
   padding: 20px; /* Espaçamento interno */
 }
 
-/* Estilos para o rodapé */
 .footer {
   background-color: #343a40; /* Azul marinho para o fundo */
   color: #fff; /* Texto branco */
